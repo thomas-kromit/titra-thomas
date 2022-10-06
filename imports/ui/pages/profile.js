@@ -90,6 +90,12 @@ Template.profile.events({
     templateInstance.$('#avatarData').val('')
     templateInstance.$('.js-save').click()
   },
+  'change #theme': (event, templateInstance) => {
+    event.preventDefault()
+    templateInstance.$('#theme').val()
+    templateInstance.$('.js-save').click()
+    document.location.reload()
+  },
 })
 Template.profile.onCreated(function settingsCreated() {
   this.selectedAvatarColor = new ReactiveVar('#455A64')
