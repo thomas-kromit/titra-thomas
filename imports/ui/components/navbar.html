@@ -19,12 +19,25 @@
               {{/if}}
             {{/unless}}
           </div>
+<!-- 
+          <div class="btn-group dropstart">
+            <button type="button"  class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" >
+              <span class="visually-hidden">Toggle Dropstart</span>
+            </button>
+            <ul class="dropdown:hover dropdown-menu">
+              <li><button class="dropdown-item" type="button" value="m">{{t "globals.minute"}}</button></li>
+              <li><button class="dropdown-item" type="button" value="h">{{t "globals.hour"}}</button></li>
+              <li><button class="dropdown-item" type="button" value="d">{{t "globals.day"}}</button></li>
+            </ul>
+          </div> -->
+
+
           <ul class="navbar-nav">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle {{isRouteActive 'settings'}}" href="#" aria-label="Menu dropdown" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 {{{avatar}}}
               </a>
-              <div class="dropdown-menu mt-0 bg-dark" aria-label="navbarDropdownMenuLink" style="left:auto;right:-1rem;">
+              <div class="dropdown-menu mt-0 bg-dark" aria-label="navbarDropdownMenuLink" style="left:auto;right:-0.7rem;">
                   <a class="dropdown-item text-white" href="{{ prefix }}/profile"><i class="fa fa-user-circle"></i> {{t "navigation.profile"}}</a>
                   <a class="dropdown-item text-white" href="{{ prefix }}/settings"><i class="fa fa-cogs"></i> {{t "navigation.settings"}}</a>
                 {{#unless currentUser.loggingIn}}
@@ -36,6 +49,9 @@
                 {{/unless}}
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item text-white" href="{{ prefix }}/about"><i class="fa fa-info-circle"></i> {{t "navigation.about"}}</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-white timeunitSwitch" style="cursor:pointer;"><i class="fa fa-repeat"></i> {{t "settings.time_unit"}}: {{timeunit}}
+                </a>
               </div>
             </li>
           </ul>
