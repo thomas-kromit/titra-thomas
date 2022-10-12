@@ -123,8 +123,9 @@ $btn-link-color: $body-color;
   background-repeat: repeat-x;
   background-size: 1px 5px;
 }
-
-
+.table-responsive .form-control {
+  color: #00b9a6  !important;
+}
 // draggable
 .drag {
   z-index: 1000;
@@ -299,8 +300,3 @@ button.dp-clear {
   color: $light !important;
 }
 
-.fc-bg-event {
-  background-color: $dark !important;
-  color: $light !important;
-  opacity: 1 !important;
-}

@@ -45,6 +45,11 @@ $progress-bg: $secondary;
 .fc-unthemed td.fc-today {
   background:         rgba(0, 150, 136, 0.5) !important;
 }
+.fc-bg-event {
+  background-color: #d1d1d1 !important;
+  color: #636363 !important;
+  opacity: 1 !important;
+}
 .alert-secondary {
     color:              #7b7b7b;
     background-color:   #ffffff;
@@ -84,15 +89,21 @@ $progress-bg: $secondary;
   border-color:             #dee2e6 #dee2e6 #fff;
   
 }
+.fc-theme-standard td, .fc-theme-standard th {
+  background-color:         #ffffff !important;
+}
+.fc-daygrid-day-frame:hover {
+  background-color:         #f8f8f8 !important;
+}
 .nav-tabs {
-    border-bottom: 0px solid #dee2e6 !important;
+    border-bottom:          0px solid #dee2e6 !important;
 }
 .dt-scrollable {
     //border-top: 0px solid #d1d8dd;
-    border-top: 0px solid var(--dt-border-color) !important;
+    border-top:             0px solid var(--dt-border-color) !important;
 }
 .dt-scrollable__no-data {
-border: 0px !important;
+border:                     0px !important;
 }
 .nav-tabs .nav-link:hover {
   color:                    #495057;
