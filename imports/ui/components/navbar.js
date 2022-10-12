@@ -5,7 +5,6 @@ import { displayUserAvatar, getUserSetting, showToast } from '../../utils/fronte
 import './navbar.html'
 import './timetracker'
 
-
 Template.navbar.onCreated(function navbarCreated() {
   this.autorun(() => {
     if (Meteor.user()) {
@@ -21,7 +20,6 @@ Template.navbar.helpers({
   getUserSetting: (setting) => getUserSetting(setting),
 })
 
-
 Template.navbar.events({
   'click .timeunitSwitch': (event, templateInstance) => {
     event.preventDefault()
@@ -33,5 +31,4 @@ Template.navbar.events({
       showToast(t('settings.time_unit') + ': ' + (t('globals.day_plural')))
     }
   }
-
 })
