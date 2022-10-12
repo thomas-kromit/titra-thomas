@@ -125,6 +125,7 @@
     "auto_detect": "Auto detect",
     "light_theme": "Light",
     "dark_theme": "Dark",
+    "avocado_theme": "Avocado",
     "time_tracking": "Time tracking",
     "track_time_view": "Default track time view",
     "time_unit": "Time unit",

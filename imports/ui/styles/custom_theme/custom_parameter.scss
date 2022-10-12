@@ -1,0 +1,139 @@
+@import "{}/imports/ui/styles/custom_theme/custom_variables.scss";
+// ++++ [CustomThemeColors] ++++   ///////////////////////////////////////////////////////
+
+/// PRIMARY COLORS /////////////////////////////////////////// START
+$primary: var(--titra-primary);// Color/Background-Color for links, Save-, Selectbuttons 
+$secondary: #272727; // Background-Color for all fields, control buttons, checkboxes
+$success: #009688;
+$info: #86a8a5;
+$warning: #cb9800;
+$danger: #f57c80;
+$light: #BDBDBD;
+$dark: #212529;
+$dark-border: #3a3a3a;
+$dark-form: #1d1d1d;
+$grey: #2d2d2d;
+$lightgrey: #404040;
+$gray-900: #eeeeee;
+$titra-dark: #006d62;
+$none: none;
+
+$body-background-color: #c5d4cb;
+/////////////////////////////////////////// PRIMARY COLORS //// END
+/// MAIN NAVBAR /////////////////////////////////////////// START
+/// Main Navbar Background Color
+$main-navbar-background-color: #7DA49D;
+/// Main Navbar Color
+$main-navbar-color: #E0EBE5;
+$main-navbar-color-hover: #E0EBE5;
+/// Main Navbar Border
+$main-navbar-border-color: transparent;
+$main-navbar-border-color-hover: transparent;
+/// Main Navbar Opacity
+$main-navbar-opacity: 1;
+/// Icons-Only (display:inLine;)
+$main-navbar-label-display: none;
+/////////////////////////////////////////// MAIN NAVBAR //// END
+/// NAVIGATION /////////////////////////////////////////// START
+/// Navigation Background Color
+$tab-navigation-background-color: #ffff;
+$tab-navigation-background-color-hover: #ffff;
+$tab-navigation-background-color-highlight: #ffff;
+/// Navigation Border Color
+$tab-navigation-border-color: #ffff;
+$tab-navigation-border-color-hover: #ffff;
+$tab-navigation-border-color-highlight: #ffff;
+/// Navigation Color
+$tab-navigation-color: #ffff;
+$tab-navigation-color-hover: #ffff;
+$tab-navigation-color-highlight: #ffff;
+/////////////////////////////////////////// NAVIGATION //// END
+/// NOTIFICATIONS /////////////////////////////////////////// START
+/// Notifications Background Color
+$info-notification-background-color: #86a8a5;
+$success-notification-background-color: #009688;
+$warning-notification-background-color: #cb9800;
+$danger-notification-background-color: #f57c80;
+/// Notification Border Color
+$info-notification-border-color: #86a8a5;
+$success-notification-border-color: #009688;
+$warning-notification-border-color: #cb9800;
+$danger-notification-border-color: #f57c80;
+/// Notification  Color
+$info-notification-color: #86a8a5;
+$success-notification-color: #009688;
+$warning-notification-color: #cb9800;
+$danger-notification-color: #f57c80;
+/////////////////////////////////////////// NOTIFICATIONS //// END
+/// BUTTONS /////////////////////////////////////////// START
+/// Primary-Buttons 
+/// Background Color
+$primary-button-background-color: #81C0A7;
+$primary-button-background-color-hover: #A2CAC3;
+/// Border Color
+$primary-button-border-color: transparent;
+$primary-button-border-color-hover: transparent;
+/// Color
+$primary-button-color: #344B47; // Font-Color of primary buttons
+$primary-button-color-hover: #344B47; // Font-Hover-Color of primary buttons
+/// Secondary-Buttons 
+/// Background Color
+$secondary-button-background-color: #cbdfd5;
+$secondary-button-background-color-hover: #A2CAC3;
+/// Border Color
+$secondary-button-border-color: transparent;
+$secondary-button-border-color-hover: transparent;
+/// Color
+$secondary-button-color: #344B47;
+$secondary-button-color-hover: #3D625C;
+/// InputField-Buttons 
+/// Background Color
+$input-button-background-color: #404040;
+$input-button-background-color-hover: #006d62;
+/// Border Color
+$input-button-border-color: #3a3a3a;
+$input-button-border-color-hover: #3a3a3a;
+/// Color
+$input-button-color: #bbbbbb;
+$input-button-color-hover: #2d2d2d;
+/////////////////////////////////////////// BUTTONS //// END
+/// CONTAINER /////////////////////////////////////////// START      
+/// Container Background Color
+$container-background-color: $grey;
+/// Container Border Color
+$container-background-color: $grey;
+/////////////////////////////////////////// CONTAINER //// END
+/// INPUT FIELDS /////////////////////////////////////////// START      
+/// InputField Background
+$input-field-background-color: #404040;
+$input-field-background-color-hover: #404040;
+/// InputField Border
+$input-field-border-color: #404040;
+$input-field-border-color-hover: #404040;
+/// InputField Color
+$input-field-border-color: #404040;
+$input-field-border-color-hover: #404040;
+/////////////////////////////////////////// INPUT FIELDS //// END
+/// CARDS /////////////////////////////////////////// START  
+/// Card Header Background
+$card-header-background-color: #739992;
+/// Card Header Color
+$card-header-color: #E0EBE5;
+/// Card Header Border Color
+$card-header-border-color: transparent;
+/// Card Background
+$card-background-color: #DBECE3;
+/// Card All Projects Gradient
+$card-allprojects-gradient-colors: linear-gradient(to top, #dbece3, #bad1c7, #9ab6ad, #7b9b94, #5c827c);
+/// Card Color
+$card-color: #4a5c59;
+/// Card Border Color 
+$card-border-color: #344B47;
+$card-border: none;
+/// Card allProjects Font Color
+$card-allprojects-font-color: #DBECE3;
+$card-allprojects-header-border-color: #344B47;
+/// Card Batch Color
+$card-badge-color: #cbdfd5;
+$card-badge-background-color: #7da49d;
+/////////////////////////////////////////// CARDS //// END    

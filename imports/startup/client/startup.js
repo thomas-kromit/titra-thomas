@@ -46,6 +46,8 @@ Meteor.startup(() => {
         import('../../ui/styles/dark.scss')
       } else if (getUserSetting('theme') === 'light') {
         import('../../ui/styles/light.scss')
+      } else if (getUserSetting('theme') === 'custom') {
+        import('../../ui/styles/custom_theme/custom.scss')
       } else if (isDarkMode()) {
         import('../../ui/styles/dark.scss')
       } else {
