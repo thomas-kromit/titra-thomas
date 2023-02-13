@@ -1,21 +1,178 @@
 @import "{}/imports/ui/styles/general.scss";
 
-:root {
-    --titra-primary: hsl(339, 100%, 18%);
+// ++++ [CustomThemeVariables] ++++   ///////////////////////////////////////////////////////
 
-    //secondary Buttons
-        --bs-btn-color: #fff;
-        --bs-btn-bg: #6c757d;
-        --bs-btn-border-color: #6c757d;
-        --bs-btn-hover-color: #fff;
-        --bs-btn-hover-bg: #5c636a;
-        --bs-btn-hover-border-color: #565e64;
-        --bs-btn-focus-shadow-rgb: 130, 138, 145;
-        --bs-btn-active-color: #fff;
-        --bs-btn-active-bg: #565e64;
-        --bs-btn-active-border-color: #51585e;
-        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-        --bs-btn-disabled-color: #fff;
-        --bs-btn-disabled-bg: #6c757d;
-        --bs-btn-disabled-border-color: #6c757d;
+:root {
+--titra-primary: hsl(339, 100%, 18%);
+--secondary: #272727; // Background-Color for all fields, control buttons, checkboxes
+--success: #009688;
+--info: #86a8a5;
+--warning: #cb9800;
+--danger: #f57c80;
+--light: #bdbdbd;
+--dark: #212529;
+--dark-border: #3a3a3a;
+--dark-form: #1d1d1d;
+--grey: #2d2d2d;
+--lightgrey: #404040;
+--gray-900: #eeeeee;
+--titra-dark: #006d62;
+--none: none;
+//Body
+--main-body-bg-color: #d5d5d5;
+//Main Navbar
+--main-navbar-color: #739992;
+--main-navbar-color-hover: #b6c2c0;
+--main-navbar-bg-color: #e8e9e8;
+--main-navbar-border-color: transparent;
+--main-navbar-border-color-hover: transparent;
+--main-navbar-opacity: 1;
+--main-navbar-label-display: none;
+--main-navbar-logo-display: grid;
+//Navbar Dropdown
+--navbar-dropdown-color: #739992;
+--navbar-dropdown-color-hover: #455a64;
+--navbar-dropdown-bg-color: #f5f7f6;
+--navbar-dropdown-bg-color-hover: #e4e4e4;
+--navbar-dropdown-border-color: transparent;
+--navbar-dropdown-border-color-hover: transparent;
+--navbar-dropdown-opacity: 1;
+--navbar-dropdown-item-background-color: #f5f7f6;
+--navbar-dropdown-item-background-color-hover: #e8e9e8;
+--navbar-dropdown-item-color: #739992;
+--navbar-dropdown-item-color-hover: #739992;
+/// Navigation
+--tab-navigation-bg-color: #ffff;
+--tab-navigation-bg-color-hover: #ffff;
+--tab-navigation-bg-color-highlight: #ffff;
+--tab-navigation-border-color: #ffff;
+--tab-navigation-border-color-hover: #ffff;
+--tab-navigation-border-color-hl: #ffff;
+--tab-navigation-color: #ffff;
+--tab-navigation-color-hover: #ffff;
+--tab-navigation-color-hl: #ffff;
+
+/// Notifications
+--info-notification-bg-color: #86a8a5;
+--success-notification-bg-color: #009688;
+--warning-notification-bg-color: #cb9800;
+--danger-notification-bg-color: #f57c80;
+--info-notification-border-color: #86a8a5;
+--success-notification-border-color: #009688;
+--warning-notification-border-color: #cb9800;
+--danger-notification-border-color: #f57c80;
+--info-notification-color: #86a8a5;
+--success-notification-color: #009688;
+--warning-notification-color: #cb9800;
+--danger-notification-color: #f57c80;
+
+/// Primary-btns
+/// Background Color
+--primary-btn-background-color: #739992;
+--primary-btn-background-color-hover: #cbdfd5;
+/// Border Color
+--primary-btn-border-color: transparent;
+--primary-btn-border-color-hover: transparent;
+/// Color
+--primary-btn-color: #effaf4; // Font-Color of primary btns
+--primary-btn-color-hover: #6c6c6c ; // Font-Hover-Color of primary btns
+/// Secondary-btns
+/// Background Color
+--secondary-btn-background-color: #f5f5f5;
+--secondary-btn-background-color-hover: #e0ebe5;
+/// Border Color
+--secondary-btn-border-color: #d5d5d5;
+--secondary-btn-border-color-hover: transparent;
+/// Color
+--secondary-btn-color: #344b47;
+--secondary-btn-color-hover: #3d625c;
+/// InputField-btns
+/// Background Color
+--input-btn-background-color: #404040;
+--input-btn-background-color-hover: #006d62;
+/// Border Color
+--input-btn-border-color: #3a3a3a;
+--input-btn-border-color-hover: #3a3a3a;
+/// Color
+--input-btn-color: #bbbbbb;
+--input-btn-color-hover: #2d2d2d;
+
+/// INPUT FIELDS //////////////////////////////////////////
+/// InputField Background
+--input-field-background-color: #404040;
+--input-field-background-color-hover: #404040;
+/// InputField Border
+--input-field-border-color: #404040;
+--input-field-border-color-hover: #404040;
+/// InputField Color
+--input-field-color: #404040;
+--input-field-color-hover: #404040;
+/// Input Fields Date-Picker / Timer etc.
+--input-group-background-color: #ededed;
+--input-group-color: #303638;
+--input-group-text-background-color: #ffffff;
+--input-group-text-color: #000000;
+--input-group-text-border: 1px solid #ced4da;
+/// SWITCHES //////////////////////////////////////////
+/// Hide/Unhide archived Projects
+--switch-archived-projects-background-color: #a9bab7;
+
+
+/// CARDS //////////////////////////////////////////
+/// Card Header Background
+--card-header-background-color: #c2cfc5;
+/// Card Header Color
+--card-header-color: #606060;
+/// Card Header Border Color
+--card-header-border-color: transparent;
+/// Card Background
+--card-background-color: #f5f7f6;
+/// Card All Projects BG Color
+--card-allprojects-background-color: #c7d2cf; //#c2cfc5;
+--card-allprojects-background-image: none;
+/// Card All Projects Border Color
+--card-allprojects-border-color: transparent;
+--card-allprojects-border: none;
+/// Card allProjects Font Color
+--card-allprojects-font-color: #455a64;
+/// Card allProjects Filter
+--card-allprojects-filter-background-color: transparent;
+/// Card Color
+--card-color: #4a5c59;
+/// Card Border Color
+--card-border-color: #344b47;
+--card-border: 1px;
+/// Card Badge Color
+--card-badge-color: #cbdfd5;
+/// Card Text Color
+--card-info-text-color: #495057;
+/// Card Handle Color
+--card-handle-color: #cbdfd5;
+/// Card Filter Panel 
+--card-filter-panel-background: #ffffff ;
+/// FORM CHECK INPUT //////////////////////////////////////////
+/// Check Input Background
+--form-check-input-background-color-checked: #009688;
+--form-check-input-background-color-focus: #009688;
+--form-check-input-background-color: #d2d2d2;
+/// Check Input Border
+--form-check-input-border-color-checked: transparent;
+--form-check-input-border-color-focus: transparent;
+--form-check-input-border-color: transparent;
+/// CONTAINER //////////////////////////////////////////
+/// TABS Backgrounds
+--tab-container-background-color: #f5f7f6;
+--tab-dropdown-background-color-hover: #f5f7f6;
+///
+
+--fc-color:#fb0000;          // calendar pagination color, incl. today btn
+--fc-bg-color:                           #4a5c59;      // calendar pagination bg-color
+--fc-border-color:                       #4a5c59;           // calendar pagination border-color
+--fc-color-hover:                        #eee;          // calendar pagination color on hover
+--fc-bg-color-hover:                     #006d62;       // calendar pagination bg-color on hover
+--fc-border-color-hover:                 #4a5c59;           // calendar pagination bg-color on hover
+--fc-cell-border-color-width:            8px solid #4a5c59; // calendar cell border width and border-color
+--fc-cell-font-color: #a9a9a9;       // calendar cell font color 
+--fc-cell-bg-color: #a9a9a9; 
 }
+
