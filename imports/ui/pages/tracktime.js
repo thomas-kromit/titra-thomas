@@ -64,7 +64,7 @@ Template.tracktime.onRendered(() => {
 })
 Template.tracktime.onCreated(function tracktimeCreated() {
   import('math-expression-evaluator').then((mathexp) => {
-    this.math = mathexp
+    this.math = new mathexp.default()
   })
   dayjs.extend(utc)
   dayjs.extend(customParseFormat)
@@ -342,6 +342,23 @@ Template.tracktime.events({
       event.preventDefault()
       event.stopPropagation()
       templateInstance.$('.js-save').click()
+    }
+  },
+  'change #hours': (event, templateInstance) => {
+    if (getUserSetting('rounding') && getUserSetting('rounding') !== 0) {
+      const hours = templateInstance.$('#hours').val()
+      let modulo = 1
+      if (getUserSetting('timeunit') === 'm') {
+        modulo = 60
+      }
+      if (getUserSetting('timeunit') === 'h') {
+        modulo = 1
+      } else if (getUserSetting('timeunit') === 'd') {
+        modulo = getUserSetting('hoursToDays')
+      }
+      if (hours) {
+        templateInstance.$('#hours').val((Math.ceil(hours / getUserSetting('rounding')) * getUserSetting('rounding')) % modulo)
+      }
     }
   },
   'click .js-edit-time-entry': (event, templateInstance) => {

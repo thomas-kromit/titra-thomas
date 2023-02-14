@@ -81,7 +81,7 @@ Template.projectsearch.onRendered(() => {
           onSelectItem: ({ label, value }) => {
             templateInstance.$('.js-target-project').removeClass('is-invalid')
             templateInstance.selectedId.set(value)
-            if (!(templateInstance.data.tcid && templateInstance.data.tcid.get())) {
+            if (!(templateInstance.data.tcid && templateInstance.data.tcid.get()) && !$('#edit-tc-entry-modal').hasClass('show')) {
               FlowRouter.setParams({ projectId: value })
             }
             if (!Projects.findOne({ _id: templateInstance.selectedId.get() })?.defaultTask) {
@@ -96,4 +96,10 @@ Template.projectsearch.onRendered(() => {
       }
     }
   })
+})
+Template.projectsearch.events({
+  'click .js-display-project-info': (event, templateInstance) => {
+    event.preventDefault()
+    $('#projectInfoPopup').modal('show')
+  },
 })
