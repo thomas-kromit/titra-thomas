@@ -1,126 +1,163 @@
 @import "{}/imports/ui/styles/custom_theme/custom_variables.scss";
+// ++++ [CustomThemeColors] ++++   ///////////////////////////////////////////////////////
 
-// ++++ [CustomThemeParameter] ++++   ///////////////////////////////////////////////////////
-// do not edit -> use custom_variables.scss to edit
+/// PRIMARY COLORS //////////////////////////////////////////
+$primary: var(
+  --titra-primary
+); // Color/Background-Color for links, Save-, Selectbuttons
+$secondary: #272727; // Background-Color for all fields, control buttons, checkboxes
+$success: #009688;
+$info: #86a8a5;
+$warning: #cb9800;
+$danger: #f57c80;
+$light: #bdbdbd;
+$dark: #212529;
+$dark-border: #3a3a3a;
+$dark-form: #1d1d1d;
+$grey: #2d2d2d;
+$lightgrey: #404040;
+$gray-900: #eeeeee;
+$titra-dark: #006d62;
+$none: none;
 
-$imp: !important;
-$body-background-color: var(--main-body-bg-color) $imp;
-$main-navbar-background-color: var(--main-navbar-bg-color) $imp;
-$main-navbar-color: var(--main-navbar-color) $imp;
-$main-navbar-color-hover: var(--main-navbar-color-hover) $imp;
-$main-navbar-border-color: var(--main-navbar-border-color) $imp;
-$main-navbar-border-color-hover: var(--main-navbar-border-color-hover) $imp;
-$main-navbar-opacity: var(--main-navbar-opacity) $imp;
-$main-navbar-label-display: var(--main-navbar-label-display) $imp;
-$main-navbar-logo-display: var(--main-navbar-logo-display) $imp;
+$body-background-color: #9bada7;
+/// MAIN NAVBAR //////////////////////////////////////////
+/// Main Navbar Background Color
+$main-navbar-background-color: #7b8a85 ;
+/// Main Navbar Color
+$main-navbar-color: #e0ebe5;
+$main-navbar-color-hover: #e0ebe5;
+/// Main Navbar Border
+$main-navbar-border-color: transparent;
+$main-navbar-border-color-hover: transparent;
+/// Main Navbar Opacity
+$main-navbar-opacity: 1;
+/// Icons-Only (display:inLine;)
+$main-navbar-label-display: none;
 
-$navbar-dropdown-background-color: var(--navbar-dropdown-bg-color) $imp;
-$navbar-dropdown-background-color-hover: var(--navbar-dropdown-color-hover) $imp;
-$navbar-dropdown-color: var(--navbar-dropdown-bg-color) $imp;
-$navbar-dropdown-color-hover: var(--navbar-dropdown-bg-color-hover) $imp;
-$navbar-dropdown-border-color: var(--navbar-dropdown-border-color) $imp;
-$navbar-dropdown-border-color-hover: var(--navbar-dropdown-border-color-hover) $imp;
-$navbar-dropdown-opacity: var(--navbar-dropdown-opacity) $imp;
-$navbar-dropdown-item-background-color: var(--navbar-dropdown-item-background-color) $imp;
-$navbar-dropdown-item-background-color-hover: var(--navbar-dropdown-item-background-color-hover) $imp;
-$navbar-dropdown-item-color: var(--navbar-dropdown-item-color) $imp;
-$navbar-dropdown-item-color-hover: var(--navbar-dropdown-item-color-hover) $imp;
+/// NAVBAR DROPDOWN //////////////////////////////////////////
+/// Dropdown Navbar Background Color
+$navbar-dropdown-background-color: #7da49d;
+$navbar-dropdown-background-color-hover: #739992;
+/// Dropdown Navbar Color
+$navbar-dropdown-color: #e0ebe5;
+$navbar-dropdown-color-hover: #ffffff;
+/// Dropdown Navbar Border
+$navbar-dropdown-border-color: transparent;
+$navbar-dropdown-border-color-hover: transparent;
+/// Dropdown Navbar Opacity
+$navbar-dropdown-opacity: 1;
 
+/// NAVIGATION //////////////////////////////////////////
+/// Navigation Background Color
+$tab-navigation-background-color: #ffff;
+$tab-navigation-background-color-hover: #ffff;
+$tab-navigation-background-color-highlight: #ffff;
+/// Navigation Border Color
+$tab-navigation-border-color: #ffff;
+$tab-navigation-border-color-hover: #ffff;
+$tab-navigation-border-color-highlight: #ffff;
+/// Navigation Color
+$tab-navigation-color: #ffff;
+$tab-navigation-color-hover: #ffff;
+$tab-navigation-color-highlight: #ffff;
 
-$tab-navigation-background-color: var(--tab-navigation-bg-color) $imp;
-$tab-navigation-background-color-hover: var(--tab-navigation-bg-color-hover) $imp;
-$tab-navigation-background-color-highlight: var(--tab-navigation-bg-color-highlight) $imp;
-$tab-navigation-border-color: var(--tab-navigation-border-color) $imp;
-$tab-navigation-border-color-hover: var(--tab-navigation-border-color-hover) $imp;
-$tab-navigation-border-color-highlight: var(--tab-navigation-border-color-hl) $imp;
-$tab-navigation-color: var(--tab-navigation-color) $imp;
-$tab-navigation-color-hover: var(--tab-navigation-color-hover) $imp;
-$tab-navigation-color-highlight: var(--tab-navigation-color-hl) $imp;
+/// NOTIFICATIONS //////////////////////////////////////////
+/// Notifications Background Color
+$info-notification-background-color: #86a8a5;
+$success-notification-background-color: #009688;
+$warning-notification-background-color: #cb9800;
+$danger-notification-background-color: #f57c80;
+/// Notification Border Color
+$info-notification-border-color: #86a8a5;
+$success-notification-border-color: #009688;
+$warning-notification-border-color: #cb9800;
+$danger-notification-border-color: #f57c80;
+/// Notification  Color
+$info-notification-color: #86a8a5;
+$success-notification-color: #009688;
+$warning-notification-color: #cb9800;
+$danger-notification-color: #f57c80;
 
-$tab-container-background-color: var(--tab-container-background-color) $imp;
-$tab-container-background-color-hover: var(--tab-container-background-color-hover) $imp;
+/// BUTTONS //////////////////////////////////////////
+/// Primary-Buttons
+/// Background Color
+$primary-button-background-color: #81c0a7;
+$primary-button-background-color-hover: #a2cac3;
+/// Border Color
+$primary-button-border-color: transparent;
+$primary-button-border-color-hover: transparent;
+/// Color
+$primary-button-color: #344b47; // Font-Color of primary buttons
+$primary-button-color-hover: #344b47; // Font-Hover-Color of primary buttons
+/// Secondary-Buttons
+/// Background Color
+$secondary-button-background-color: #cbdfd5;
+$secondary-button-background-color-hover: #a2cac3;
+/// Border Color
+$secondary-button-border-color: transparent;
+$secondary-button-border-color-hover: transparent;
+/// Color
+$secondary-button-color: #344b47;
+$secondary-button-color-hover: #3d625c;
+/// InputField-Buttons
+/// Background Color
+$input-button-background-color: #404040;
+$input-button-background-color-hover: #006d62;
+/// Border Color
+$input-button-border-color: #3a3a3a;
+$input-button-border-color-hover: #3a3a3a;
+/// Color
+$input-button-color: #bbbbbb;
+$input-button-color-hover: #2d2d2d;
 
-$info-notification-background-color: var(--info-notification-bg-color) $imp;
-$success-notification-background-color: var(--success-notification-bg-color) $imp;
-$warning-notification-background-color: var(--warning-notification-bg-color) $imp;
-$danger-notification-background-color: var(--danger-notification-bg-color) $imp;
-$info-notification-border-color: var(--info-notification-border-color) $imp;
-$success-notification-border-color: var(--success-notification-border-color) $imp;
-$warning-notification-border-color: var(--warning-notification-border-color) $imp;
-$danger-notification-border-color: var(--danger-notification-border-color) $imp;
-$info-notification-color: var(--info-notification-color) $imp;
-$success-notification-color: var(--success-notification-color) $imp;
-$warning-notification-color: var(--warning-notification-color) $imp;
-$danger-notification-color: var(--danger-notification-color) $imp;
+/// CONTAINER //////////////////////////////////////////
+/// Container Background Color
+$container-background-color: $grey;
+/// Container Border Color
+$container-background-color: $grey;
 
-$primary-button-background-color: var(--primary-btn-background-color) $imp;
-$primary-button-background-color-hover: var(--primary-btn-background-color-hover) $imp;
-$primary-button-border-color: var(--primary-btn-border-color) $imp;
-$primary-button-border-color-hover: var(--primary-btn-border-color-hover) $imp;
-$primary-button-color: var(--primary-btn-color) $imp; // Font-Color of primary buttons
-$primary-button-color-hover: var(--primary-btn-color-hover) $imp; // Font-Hover-Color of primary buttons
+/// INPUT FIELDS //////////////////////////////////////////
+/// InputField Background
+$input-field-background-color: #404040;
+$input-field-background-color-hover: #404040;
+/// InputField Border
+$input-field-border-color: #404040;
+$input-field-border-color-hover: #404040;
+/// InputField Color
+$input-field-border-color: #404040;
+$input-field-border-color-hover: #404040;
 
-$secondary-button-background-color: var(--secondary-btn-background-color) $imp;
-$secondary-button-background-color-hover: var(--secondary-btn-background-color-hover) $imp;
-$secondary-button-border-color: var(--secondary-btn-border-color) $imp;
-$secondary-button-border-color-hover: var(--secondary-btn-border-color-hover) $imp;
-$secondary-button-color: var(--secondary-btn-color) $imp;
-$secondary-button-color-hover: var(--secondary-btn-color-hover) $imp;
-
-$input-button-background-color: var(--input-btn-background-color) $imp;
-$input-button-background-color-hover: var(--input-btn-background-color-hover) $imp;
-$input-button-border-color: var(--input-btn-border-color) $imp;
-$input-button-border-color-hover: var(--input-btn-border-color-hover) $imp;
-$input-button-color: var(--input-btn-color) $imp;
-$input-button-color-hover: var(--input-btn-color-hover) $imp;
-
-$input-field-background-color: var(--input-field-background-color) $imp;
-$input-field-background-color-hover: var(--input-field-background-color-hover) $imp;
-$input-field-border-color: var(--input-field-border-color) $imp;
-$input-field-border-color-hover: var(--input-field-border-color-hover) $imp;
-$input-field-color: var(--input-field-color) $imp;
-$input-field-color-hover: var(--input-field-color-hover) $imp;
-
-$input-group-background-color: var(--input-group-background-color) $imp;
-$input-group-color: var(--input-group-color) $imp;
-$input-group-text-background-color: var(--input-group-text-background-color) $imp;
-$input-group-text-color: var(--input-group-text-color) $imp;
-$input-group-text-border: var(--input-group-text-border) $imp;
-
-$switch-archived-projects-background-color: var(--switch-archived-projects-background-color) $imp;
-
-$card-header-background-color: var(--card-header-background-color) $imp;
-$card-header-color: var(--card-header-color) $imp;
-$card-header-border-color: var(--card-header-border-color) $imp;
-$card-background-color: var(--card-background-color) $imp;
-$card-info-text-color: var(--card-info-text-color) $imp;
-$card-allprojects-background-color: var(--card-allprojects-background-color) $imp; //var() $imp;
-$card-allprojects-background-image: var(--card-allprojects-background-image) $imp;
-$card-allprojects-border-color: var(--card-allprojects-border-color) $imp;
-$card-allprojects-border: var(--card-allprojects-border) $imp;
-$card-allprojects-font-color: var(--card-allprojects-font-color) $imp;
-$card-allprojects-filter-background-color: var(--card-allprojects-filter-background-color) $imp;
-$card-color: var(--card-color) $imp;
-$card-border-color: var(--card-border-color) $imp;
-$card-border: var(--card-border) $imp;
-$card-badge-color: var(--card-badge-color) $imp;
-$card-badge-background-color: var(--card-badge-background-color) $imp;
-$card-handle-color: var(--card-handle-color) $imp;
-$card-filter-panel-background: var(--card-filter-panel-background) $imp;
-
-$form-check-input-background-color-checked: var(--form-check-input-background-color-checked) $imp;
-$form-check-input-background-color-focus: var(--form-check-input-background-color-focus) $imp;
-$form-check-input-background-color: var(--form-check-input-background-color) $imp;
-$form-check-input-border-color-checked: var(--form-check-input-border-color-checked) $imp;
-$form-check-input-border-color-focus: var(--form-check-input-border-color-focus) $imp;
-$form-check-input-border-color: var(--form-check-input-border-color) $imp;
-
-$fc-color: var(--fc-color) $imp;
-$fc-bg-color: var(--fc-bg-color) $imp;
-$fc-border-color: var(--fc-border-color) $imp;
-$fc-color-hover: var(--fc-color-hover) $imp;
-$fc-bg-color-hover: var(--fc-bg-color-hover) $imp;             
-$fc-border-color-hover: var(--fc-border-color-hover) $imp;
-$fc-cell-border-color-width: var(--fc-cell-border-color-width) $imp;
-$fc-cell-font-color: var(--fc-cell-font-color) $imp;
-$fc-cell-bg-color: var(--fc-cell-bg-color) $imp;
+/// CARDS //////////////////////////////////////////
+/// Card Header Background
+$card-header-background-color: #739992;
+/// Card Header Color
+$card-header-color: #e0ebe5;
+/// Card Header Border Color
+$card-header-border-color: transparent;
+/// Card Background
+$card-background-color: #dbece3;
+/// Card All Projects Gradient
+$card-allprojects-gradient-colors: linear-gradient(
+  to top,
+  #bad1c7,
+  #9ab6ad,
+  #9ab6ad,
+  #7b9b94,
+  #5c827c
+);
+/// Card Color
+$card-color: #4a5c59;
+/// Card Border Color
+$card-border-color: #344b47;
+$card-border: none;
+/// Card allProjects Font Color
+$card-allprojects-font-color: #dbece3;
+$card-allprojects-header-border-color: #344b47;
+/// Card Badge Color
+$card-badge-color: #cbdfd5;
+$card-badge-background-color: #7da49d;
+/// Card Handle Color
+$card-handle-color: #cbdfd5;
+/// Card Box Shadow
+$card-box-shadow: 20px 20px 100px 20px #02020221;
